@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDU_INFO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('https://media.istockphoto.com/id/1251272960/photo/teacher-desk-full-of-books-against-a-blackboard-background-whit-copy-space.jpg?b=1&s=170667a&w=0&k=20&c=RU52cmLAwO6bEt8OuUgpHokFMgP9ZffgT6NsppPKdYM=');
+            color: aliceblue;
+            background-repeat: no-repeat;
+            background-size:100%;
+        }
+        .head{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .left{
+            /* border: 2px solid whitesmoke; */
+            padding: 10px 10px;
+            width: 10%;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Amatic SC', cursive;
+        }
+        .mid{
+            /* border: 2px solid whitesmoke; */
+            border-radius: 10px;
+            padding: 0px 10px;
+            padding-left: 2px;
+            width: 50%;
+        }
+        .right{
+            padding: 0px 10px;
+            width: 10%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .navbar li{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            font-size: large;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: aliceblue;
+            width: 20px;
+        }
+        .navbar li a :hover{
+            text-decoration: underline;
+            color: rgb(9, 60, 104);
+        }
+        .left img{
+            width: 126px;
+            border-radius: 10px;
+        }
+        .container{
+            margin-top: 70px;
+            /* border: 2px solid red; */
+            align-items: left;
+            height: fit-content;
+            padding-left: 470px;
+        }
+        .form-group input{
+            margin-top:8px;
+            display: block;
+            text-align: center;
+            font-size: large;
+            height: 30px;
+            width: 20%;
+            border-radius: 10px;
+        }
+        .btn{
+            margin-top:10px;
+            display: block;
+            font-size: large;
+            width: 20%;
+            border-radius: 10px;
+            background-color: #cac5c5;
+            cursor: pointer;
+            height: 30px;
+        }
+        #but{
+            margin-top:10px;
+            display: block;
+            font-size: large;
+            width: 50%;
+            border-radius: 10px;
+            background-color: #cac5c5;
+            cursor: pointer;
+            height: 50px;
+        }
+        #but:hover{
+            color: rgb(63, 83, 83);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+     <header class="head">
+        <div class="left">
+            <img src="https://st2.depositphotos.com/1001599/8529/v/950/depositphotos_85291584-stock-illustration-writing-pad-and-pen-icon.jpg" alt="loading logo">
+            <div>EDU_INFO</div>
+        </div>
+        <div class="mid">
+          <div class="navbar">
+            <li>
+                <ul><a href="#">HOME</a></ul>
+                <ul><a href="#">ABOUT US</a></ul>
+                <ul><a href="#">HELP YOURSELF</a></ul>
+                <ul><a href="#">SUCCESS STORIES</a></ul>
+            </li>
+          </div>
+        </div>
+        <div class="right">
+            <button class="btn" id="but">Contact us</button>
+            <button class="btn" id="but">Share</button>
+        </div>
+     </header>
+     <div class="container">
+            <h1>Enter your details here:</h1>
+            <form action="data.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your mob-no.">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your email-id">
+                </div>
+                <button class="btn">Reset</button>
+                <button class="btn">Submit</button>
+     </div>
+</body>
+</html>
